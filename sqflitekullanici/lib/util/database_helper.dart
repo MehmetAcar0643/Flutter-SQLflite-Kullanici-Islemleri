@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
-import 'package:sqflite_kullanici/model/kullanici.dart';
+import 'package:sqflitekullanici/model/kullanici.dart';
 
 class DatabaseHelper {
   // BU SINIFTAN HERHANGİ BİR NESNE ÜRETMEDEN OLUŞTURMAK İÇİN STATİC YAPTIK
@@ -15,7 +15,7 @@ class DatabaseHelper {
   String _columnID = "id";
   String _columnAd = "ad";
   String _columnSoyad = "soyad";
-  String _columnDurum = "aktif";
+  String _columnDurum = "durum";
 
 // BELLİ BAŞLI KONTROLLER YAPIP ONA GÖRE DEĞER YOLLAYACAĞIMIZ İÇİN FACTORY KULLANIYORUZ
   factory DatabaseHelper() {
@@ -42,7 +42,7 @@ class DatabaseHelper {
     }
   }
 
-  _initializeDatabase() {
+  _initializeDatabase() async{
     // KLASÖRÜ ÇEK
     //"c://users/mehmet/"
     Directory klasor = await getApplicationDocumentsDirectory();
@@ -52,7 +52,7 @@ class DatabaseHelper {
     print("Veritabanı Yolu: " + dbYol);
 
     //AÇILACAK VERİTABANI OLUŞTUR.
-    var kullaniciDB = openDatabase(dbYol, version: 1, onCreate: _createDB);
+    var kullaniciDB = openDatabase(dbYol, version: 5, onCreate: _createDB);
     return kullaniciDB;
   }
 

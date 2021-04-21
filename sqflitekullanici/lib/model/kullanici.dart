@@ -4,9 +4,9 @@ class Kullanici {
   String _soyad;
   int _durum;
 
+  Kullanici(this._ad, this._soyad, this._durum);
   Kullanici.withID(this._id, this._ad, this._soyad, this._durum);
 
-  Kullanici(this._ad, this._soyad, this._durum);
 
   int get durum => _durum;
 
@@ -51,6 +51,6 @@ class Kullanici {
   @override
   String toString() {
     // TODO: implement toString
-    return 'Kullanici.(_id: $_id, _ad: $ad, _soyad: $soyad, _durum: $durum)';
+    return 'Kullanici{_id: $_id, _ad: $_ad, _soyad: $_soyad, _durum: $_durum}';
   }
 }
