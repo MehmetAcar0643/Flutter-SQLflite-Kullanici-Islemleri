@@ -1,4 +1,4 @@
-package com.mehmetacar.sqflite_kullanici;
+package com.mehmetacar.sqflitekullanici;
 
 import io.flutter.embedding.android.FlutterActivity;
 

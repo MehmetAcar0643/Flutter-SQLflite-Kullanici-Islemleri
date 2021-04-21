@@ -1,6 +1,6 @@
-# sqflite_kullanici
+# sqflitekullanici
 
-Flutter sqflite kullanici ekleme,silme,güncelleme işlemleri
+sqflite kullanici islemleri
 
 ## Getting Started
 

@@ -1,5 +1,5 @@
-name: sqflite_kullanici
-description: Flutter sqflite kullanici ekleme,silme,güncelleme işlemleri
+name: sqflitekullanici
+description: sqflite kullanici islemleri
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -26,7 +26,6 @@ dependencies:
   shared_preferences: ^0.4.3
   path_provider: ^0.4.1
   sqflite: any
-
 
 
   # The following adds the Cupertino Icons font to your application.
