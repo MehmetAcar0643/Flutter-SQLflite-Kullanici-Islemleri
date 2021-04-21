@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       SwitchListTile(
-                        title: Text("Durumu? Aktif/Pasif"),
+                        title: Text("Kullanıcı Durumu Aktif Edilsin mi?"),
                         value: _kullaniciDurum,
                         onChanged: (aktifMi) {
                           setState(() {
@@ -168,6 +168,8 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _kullaniciEkle(Kullanici kullanici) async {
+
+
     var eklenenKullanici = await _databaseHelper.kullaniciEkle(kullanici);
     kullanici.id = eklenenKullanici;
     if (eklenenKullanici > 0) {
