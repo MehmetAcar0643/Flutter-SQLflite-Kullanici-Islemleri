@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e0a0cfe-f836-4e29-9771-1224c814b90f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sqflitekullanici/lib/model/kullanici.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqflitekullanici/lib/util/database_helper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Flutter-SQflite-Kullanici-Islemleri.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flutter-SQflite-Kullanici-Islemleri.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="dart.settings" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="SvnConfiguration">
@@ -40,17 +43,17 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="100" y="100" width="956" height="624" key="AVDManager" timestamp="1619031647435">
+    <state x="100" y="100" width="956" height="624" key="AVDManager" timestamp="1619037651789">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="100" y="100" width="956" height="624" key="AVDManager/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1619031647435" />
+    <state x="100" y="100" width="956" height="624" key="AVDManager/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1619037651789" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1619032608151">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1619032608151" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1619032022146">
+    <state x="277" y="0" key="SettingsEditor" timestamp="1619037671676">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1619032022146" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1619037671676" />
   </component>
 </project>

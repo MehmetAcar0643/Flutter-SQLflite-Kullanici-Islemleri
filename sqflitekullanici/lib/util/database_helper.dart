@@ -42,7 +42,7 @@ class DatabaseHelper {
     }
   }
 
-  _initializeDatabase() async{
+  _initializeDatabase() async {
     // KLASÖRÜ ÇEK
     //"c://users/mehmet/"
     Directory klasor = await getApplicationDocumentsDirectory();
@@ -52,7 +52,7 @@ class DatabaseHelper {
     print("Veritabanı Yolu: " + dbYol);
 
     //AÇILACAK VERİTABANI OLUŞTUR.
-    var kullaniciDB = openDatabase(dbYol, version: 5, onCreate: _createDB);
+    var kullaniciDB = openDatabase(dbYol, version: 1, onCreate: _createDB);
     return kullaniciDB;
   }
 
@@ -68,7 +68,7 @@ class DatabaseHelper {
     var db = await _getDatabase();
     var sonuc = await db.insert(_kullaniciTablo, kullanici.dbyeYazmakIcinMapeDonustur(),
         nullColumnHack: "$_columnID");
-    print("Kullanici EKLENDİ...");
+    print("Kullanıcı EKLENDİ...");
     return sonuc;
   }
 
@@ -81,20 +81,22 @@ class DatabaseHelper {
   Future<int> kullaniciGuncelle(Kullanici kullanici) async {
     var db = await _getDatabase();
     var sonuc = await db.update(_kullaniciTablo, kullanici.dbyeYazmakIcinMapeDonustur(),
-        where: '$_columnID:?', whereArgs: [kullanici.id]);
+        where: '$_columnID=?', whereArgs: [kullanici.id]);
+    print(kullanici.id.toString() + " ID'li Kullanıcı GÜNCELLENDİ...");
     return sonuc;
   }
 
   Future<int> kullaniciSil(int id) async {
     var db = await _getDatabase();
     var sonuc = db.delete(_kullaniciTablo, where: '$_columnID=?', whereArgs: [id]);
+    print(id.toString() + " ID'li Kullanıcı SİLİNDİ...");
     return sonuc;
   }
-  
-  tumKullanicilariSil()async{
-    var db=await _getDatabase();
-    var sonuc=await db.delete(_kullaniciTablo);
+
+  tumKullanicilariSil() async {
+    var db = await _getDatabase();
+    var sonuc = await db.delete(_kullaniciTablo);
+    print("Tüm Kullanıcılar SİLİNDİ...");
     return sonuc;
   }
-  
 }
